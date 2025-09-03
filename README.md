@@ -1,4 +1,4 @@
-# Emoji Predictor using LSTM-RNN 🚀
+# Emoji Predictor using LSTM-RNN 
 
 A deep learning project that predicts emojis based on text input using LSTM-RNN with PyTorch and CUDA support.
 
@@ -142,5 +142,3 @@ Open source project - feel free to modify and extend!
 5. Add more emoji classes
 
 ---
-
-**Happy Emoji Predicting! 😊🚀**
