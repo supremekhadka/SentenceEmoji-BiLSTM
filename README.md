@@ -1,33 +1,41 @@
 # Emoji Predictor using LSTM-RNN 🚀
 
-A deep learning project that predicts emojis based on text input using LSTM-RNN with PyTorch and CUDA support.
+A deep learning project that predicts emojis based on text input using LSTM-RNN with PyTorch and CUDA support. Trained on social media data with comprehensive text cleaning.
 
 ## Features
 
-- **LSTM-RNN Model**: Bidirectional LSTM for sequence processing
+- **LSTM-RNN Model**: Bidirectional LSTM for sequence processing (19.4M parameters)
 - **GPU Acceleration**: CUDA support for faster training and inference
 - **Interactive Web Interface**: Streamlit app with multiple input modes
-- **Data Preprocessing**: Automated cleaning and vocabulary building
+- **Comprehensive Data Cleaning**: Social media text preprocessing
 - **Real-time Prediction**: Live emoji prediction as you type
+- **Large Vocabulary**: 12,407 words with 34 emoji classes
 
 ## Dataset
 
-The project uses `sentence_emoji_dataset.csv` with sentence-emoji pairs. The preprocessing automatically:
+The project uses `emoji_dataset.csv` with social media text-emoji pairs. The preprocessing automatically:
 
-- Removes duplicate sentences
-- Handles missing values
-- Builds vocabulary from text
-- Encodes emojis as labels
+- Removes URLs, mentions, and hashtags
+- Cleans special characters and repeated text
+- Builds comprehensive vocabulary (12,407 words)
+- Encodes 34 unique emojis as labels
+- Handles 37,954+ cleaned text samples
 
 ## Project Structure
 
 ```
 SentenceEmoji-RNN/
-├── data_preprocessing.py    # Data cleaning and preparation
-├── model_training.py        # LSTM model training
-├── emoji_predictor.py       # Prediction module
-├── streamlit_app.py         # Web interface
+├── data_preprocessing.py    # Comprehensive data cleaning and preparation
+├── model_training.py        # LSTM model definition
+├── gpu_training.py          # GPU-optimized training script
+├── emoji_predictor.py       # Prediction module with text cleaning
+├── streamlit_app.py         # Interactive web interface
+├── demo.py                  # Test script with sample predictions
+├── emoji_dataset.csv        # Main dataset (37,954 samples)
+├── emoji_lstm_model.pth     # Trained model (19.4M parameters)
+├── preprocessing_data.pkl   # Vocabulary and preprocessing data
 ├── requirements.txt         # Dependencies
+└── old_files/              # Backup of previous versions
 ├── sentence_emoji_dataset.csv  # Dataset
 ├── emoji_lstm_model.pth     # Trained model (generated)
 └── preprocessing_data.pkl   # Preprocessing objects (generated)
@@ -62,15 +70,23 @@ SentenceEmoji-RNN/
 python data_preprocessing.py
 ```
 
-### 2. Train the Model
+### 2. Model Training (GPU Recommended)
 
 ```bash
+# For GPU training (recommended)
+python gpu_training.py
+
+# For CPU training (slower)
 python model_training.py
 ```
 
 ### 3. Test Predictions
 
 ```bash
+# Run demo with sample sentences
+python demo.py
+
+# Test individual predictions
 python emoji_predictor.py
 ```
 
@@ -82,10 +98,13 @@ streamlit run streamlit_app.py
 
 ## Model Architecture
 
-- **Input**: Tokenized sentences (max length: 20)
-- **Embedding**: 128-dimensional word embeddings
-- **LSTM**: Bidirectional, 2 layers, 256 hidden units
-- **Output**: 13 emoji classes with confidence scores
+- **Input**: Tokenized sentences (max length: 30)
+- **Embedding**: 256-dimensional word embeddings
+- **LSTM**: Bidirectional, 3 layers, 512 hidden units
+- **Dropout**: 0.3 for regularization
+- **Output**: 34 emoji classes with confidence scores
+- **Parameters**: 19.4M total parameters
+- **Vocabulary**: 12,407 unique words
 
 ## Web Interface Features
 

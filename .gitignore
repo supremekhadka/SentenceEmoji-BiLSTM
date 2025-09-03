@@ -327,5 +327,6 @@ Temporary Items
 *.rar
 *.7z
 
-
-!emoji_lstm_model.pth
+emoji_lstm_model.pth
+**old_files
+**.csv

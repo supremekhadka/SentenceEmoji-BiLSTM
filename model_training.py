@@ -213,7 +213,7 @@ def main():
     
     # Prepare data
     print("Preparing data...")
-    train_dataset, test_dataset, preprocessing_data = prepare_data('sentence_emoji_dataset.csv')
+    train_dataset, test_dataset, preprocessing_data = prepare_data('twitter_emoji_dataset.csv')
     
     # Create data loaders
     batch_size = 32

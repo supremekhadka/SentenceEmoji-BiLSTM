@@ -10,8 +10,8 @@ import time
 
 # Page configuration
 st.set_page_config(
-    page_title="Emoji Predictor 🚀",
-    page_icon="😊",
+    page_title="VibeCheck",
+    page_icon="🐈",
     layout="wide",
     initial_sidebar_state="expanded"
 )
@@ -49,7 +49,7 @@ st.markdown("""
 
 @st.cache_resource
 def load_predictor():
-    """Load the emoji predictor model (cached)"""
+    """Load the Twitter emoji predictor model (cached)"""
     try:
         predictor = EmojiPredictor()
         return predictor, True
@@ -117,8 +117,8 @@ def create_confidence_chart(predictions):
 
 def main():
     # Header
-    st.markdown('<h1 class="main-header">🤖 Emoji Predictor</h1>', unsafe_allow_html=True)
-    st.markdown('<p style="text-align: center; font-size: 1.2rem; color: #666;">Predict emojis from your sentences using LSTM-RNN</p>', unsafe_allow_html=True)
+    st.markdown('<h1 class="main-header">VibeCheck</h1>', unsafe_allow_html=True)
+    st.markdown('<p style="text-align: center; font-size: 1.2rem; color: #666;">Predict emojis from your sentences using Bi-LSTM</p>', unsafe_allow_html=True)
     
     # Load model
     with st.spinner("Loading emoji prediction model..."):
@@ -366,8 +366,8 @@ def real_time_mode(predictor):
         for i, example in enumerate(examples):
             with cols[i % 2]:
                 if st.button(example, key=f"example_{i}"):
-                    st.session_state.rt_input_main = example
-                    st.rerun()
+                    # Use a different approach to set the text
+                    st.info(f"Try typing: '{example}'")
     
     # Auto-refresh for better real-time experience
     if sentence:

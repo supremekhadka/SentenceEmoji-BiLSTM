@@ -1,0 +1,380 @@
+[
+  {
+    "original": "I love this so much it makes me so happy",
+    "cleaned": "i love this so much it makes me so happy",
+    "predictions": [
+      [
+        "🥹",
+        "0.981"
+      ],
+      [
+        "🥲",
+        "0.014"
+      ],
+      [
+        "😭",
+        "0.003"
+      ]
+    ]
+  },
+  {
+    "original": "This is absolutely amazing and incredible",
+    "cleaned": "this is absolutely amazing and incredible",
+    "predictions": [
+      [
+        "🙏",
+        "0.916"
+      ],
+      [
+        "😎",
+        "0.032"
+      ],
+      [
+        "🔥",
+        "0.029"
+      ]
+    ]
+  },
+  {
+    "original": "Feeling blessed and grateful today",
+    "cleaned": "feeling blessed and grateful today",
+    "predictions": [
+      [
+        "🙏",
+        "0.645"
+      ],
+      [
+        "🥰",
+        "0.278"
+      ],
+      [
+        "🤍",
+        "0.065"
+      ]
+    ]
+  },
+  {
+    "original": "Best day ever can't stop smiling",
+    "cleaned": "best day ever can t stop smiling",
+    "predictions": [
+      [
+        "🫠",
+        "0.515"
+      ],
+      [
+        "✨",
+        "0.165"
+      ],
+      [
+        "😤",
+        "0.048"
+      ]
+    ]
+  },
+  {
+    "original": "Happy birthday hope you have an amazing day",
+    "cleaned": "happy birthday hope you have an amazing day",
+    "predictions": [
+      [
+        "🥳",
+        "0.824"
+      ],
+      [
+        "🎉",
+        "0.043"
+      ],
+      [
+        "🐣",
+        "0.031"
+      ]
+    ]
+  },
+  {
+    "original": "Congratulations on your achievement",
+    "cleaned": "congratulations on your achievement",
+    "predictions": [
+      [
+        "�",
+        "0.767"
+      ],
+      [
+        "😊",
+        "0.098"
+      ],
+      [
+        "🫠",
+        "0.043"
+      ]
+    ]
+  },
+  {
+    "original": "Party time let's celebrate tonight",
+    "cleaned": "party time let s celebrate tonight",
+    "predictions": [
+      [
+        "🎉",
+        "1.000"
+      ],
+      [
+        "✅",
+        "0.000"
+      ],
+      [
+        "🥳",
+        "0.000"
+      ]
+    ]
+  },
+  {
+    "original": "Just got promoted at work so excited",
+    "cleaned": "just got promoted at work so excited",
+    "predictions": [
+      [
+        "😊",
+        "0.663"
+      ],
+      [
+        "🤍",
+        "0.216"
+      ],
+      [
+        "🥹",
+        "0.046"
+      ]
+    ]
+  },
+  {
+    "original": "This pizza looks absolutely delicious",
+    "cleaned": "this pizza looks absolutely delicious",
+    "predictions": [
+      [
+        "�",
+        "1.000"
+      ],
+      [
+        "🥰",
+        "0.000"
+      ],
+      [
+        "😎",
+        "0.000"
+      ]
+    ]
+  },
+  {
+    "original": "Coffee and good vibes this morning",
+    "cleaned": "coffee and good vibes this morning",
+    "predictions": [
+      [
+        "�",
+        "0.582"
+      ],
+      [
+        "😊",
+        "0.261"
+      ],
+      [
+        "👻",
+        "0.142"
+      ]
+    ]
+  },
+  {
+    "original": "Workout done feeling strong and energized",
+    "cleaned": "workout done feeling strong and energized",
+    "predictions": [
+      [
+        "✅",
+        "0.963"
+      ],
+      [
+        "😡",
+        "0.011"
+      ],
+      [
+        "👀",
+        "0.007"
+      ]
+    ]
+  },
+  {
+    "original": "Beautiful sunset perfect for photos",
+    "cleaned": "beautiful sunset perfect for photos",
+    "predictions": [
+      [
+        "😊",
+        "0.471"
+      ],
+      [
+        "🥰",
+        "0.440"
+      ],
+      [
+        "🤍",
+        "0.063"
+      ]
+    ]
+  },
+  {
+    "original": "Having a tough day feeling really down",
+    "cleaned": "having a tough day feeling really down",
+    "predictions": [
+      [
+        "🫠",
+        "0.761"
+      ],
+      [
+        "😊",
+        "0.101"
+      ],
+      [
+        "☀️",
+        "0.050"
+      ]
+    ]
+  },
+  {
+    "original": "Missing my family so much right now",
+    "cleaned": "missing my family so much right now",
+    "predictions": [
+      [
+        "😭",
+        "0.439"
+      ],
+      [
+        "💀",
+        "0.100"
+      ],
+      [
+        "🤣",
+        "0.096"
+      ]
+    ]
+  },
+  {
+    "original": "Can't believe this happened to me",
+    "cleaned": "can t believe this happened to me",
+    "predictions": [
+      [
+        "🥲",
+        "0.339"
+      ],
+      [
+        "🫠",
+        "0.311"
+      ],
+      [
+        "🥹",
+        "0.111"
+      ]
+    ]
+  },
+  {
+    "original": "Perfect weather for a beach day",
+    "cleaned": "perfect weather for a beach day",
+    "predictions": [
+      [
+        "😉",
+        "0.885"
+      ],
+      [
+        "💩",
+        "0.071"
+      ],
+      [
+        "�",
+        "0.024"
+      ]
+    ]
+  },
+  {
+    "original": "Love rainy days perfect for staying cozy",
+    "cleaned": "love rainy days perfect for staying cozy",
+    "predictions": [
+      [
+        "�",
+        "0.998"
+      ],
+      [
+        "🥰",
+        "0.002"
+      ],
+      [
+        "✨",
+        "0.000"
+      ]
+    ]
+  },
+  {
+    "original": "Spring flowers are blooming everywhere beautiful",
+    "cleaned": "spring flowers are blooming everywhere beautiful",
+    "predictions": [
+      [
+        "�",
+        "0.971"
+      ],
+      [
+        "🥰",
+        "0.029"
+      ],
+      [
+        "🐰",
+        "0.000"
+      ]
+    ]
+  },
+  {
+    "original": "Good night sweet dreams everyone",
+    "cleaned": "good night sweet dreams everyone",
+    "predictions": [
+      [
+        "🥰",
+        "0.701"
+      ],
+      [
+        "🐰",
+        "0.154"
+      ],
+      [
+        "✨",
+        "0.137"
+      ]
+    ]
+  },
+  {
+    "original": "Thank you for all the support and love",
+    "cleaned": "thank you for all the support and love",
+    "predictions": [
+      [
+        "✨",
+        "0.827"
+      ],
+      [
+        "👻",
+        "0.097"
+      ],
+      [
+        "👨‍🍳",
+        "0.048"
+      ]
+    ]
+  },
+  {
+    "original": "Friends make everything better grateful",
+    "cleaned": "friends make everything better grateful",
+    "predictions": [
+      [
+        "�",
+        "0.997"
+      ],
+      [
+        "🔥",
+        "0.002"
+      ],
+      [
+        "🙏",
+        "0.000"
+      ]
+    ]
+  }
+]
