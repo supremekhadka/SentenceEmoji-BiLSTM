@@ -309,10 +309,7 @@ Temporary Items
 # Keep source code
 !*.py
 
-# Model files strategy:
-# - Large model files (*.pth) are excluded above
-# - Small essential files (preprocessing_data.pkl) are included
-# - Users run 'python model_training.py' to generate large models
+
 
 # Backup files
 *.bak
@@ -329,3 +326,6 @@ Temporary Items
 *.tar.gz
 *.rar
 *.7z
+
+
+!emoji_lstm_model.pth
