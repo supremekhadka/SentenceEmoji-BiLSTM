@@ -172,32 +172,31 @@ cython_debug/
 # Machine Learning / Data Science specific
 # =====================================
 
-# Trained models (comment out if you want to include them)
+# Trained models (exclude large model files, but keep small essential ones)
 *.pth
 *.pt
 *.h5
 *.hdf5
-*.pkl
-*.pickle
+# *.pkl  # Commented out to allow essential preprocessing files
 *.model
 *.bin
 *.ckpt
 *.safetensors
 
-# Data files (comment out specific ones you want to include)
-*.csv
+# Data files (exclude large datasets, keep essential small ones)
+# *.csv  # Commented out to keep sentence_emoji_dataset.csv
 *.tsv
-*.json
+# *.json  # Might be needed for configs
 *.jsonl
 *.parquet
 *.feather
 *.xlsx
 *.xls
 
-# Image data
+# Image data (keep small visualization files, exclude large image datasets)
+# *.png  # Commented out to keep training_history.png
 *.jpg
 *.jpeg
-*.png
 *.gif
 *.bmp
 *.tiff
@@ -310,10 +309,10 @@ Temporary Items
 # Keep source code
 !*.py
 
-# Generated files to ignore
-preprocessing_data.pkl
-training_history.png
-emoji_lstm_model.pth
+# Model files strategy:
+# - Large model files (*.pth) are excluded above
+# - Small essential files (preprocessing_data.pkl) are included
+# - Users run 'python model_training.py' to generate large models
 
 # Backup files
 *.bak
