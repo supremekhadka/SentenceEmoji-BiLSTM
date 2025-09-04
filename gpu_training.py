@@ -12,19 +12,6 @@ from data_preprocessing import prepare_data  # Use cleaned data
 from sklearn.metrics import classification_report, accuracy_score
 import matplotlib.pyplot as plt
 import time
-import oszed Model Training Script for Twitter Dataset with Comprehensive Data Cleaning
-"""
-
-import torch
-import torch.nn as nn
-import torch.optim as optim
-from torch.utils.data import DataLoader
-import numpy as np
-import pickle
-from twitter_data_preprocessing import prepare_twitter_data  # Use cleaned Twitter data
-from sklearn.metrics import classification_report, accuracy_score
-import matplotlib.pyplot as plt
-import time
 import os
 
 class EmojiLSTM(nn.Module):
