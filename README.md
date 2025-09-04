@@ -1,6 +1,6 @@
 # Emoji Predictor using LSTM-RNN
 
-![Status](https://img.shields.io/badge/Status-Development%20Ready-brightgreen)
+![Status](https://img.shields.io/badge/Status-In%20Development-orange)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
 ![PyTorch](https://img.shields.io/badge/PyTorch-2.7.1-orange)
 ![CUDA](https://img.shields.io/badge/CUDA-Supported-green)
