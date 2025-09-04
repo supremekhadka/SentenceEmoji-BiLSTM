@@ -1,6 +1,6 @@
 # Emoji Predictor using LSTM-RNN
 
-![Status](https://img.shields.io/badge/Status-Production%20Ready-brightgreen)
+![Status](https://img.shields.io/badge/Status-In%20Development-orange)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
 ![PyTorch](https://img.shields.io/badge/PyTorch-2.7.1-orange)
 ![CUDA](https://img.shields.io/badge/CUDA-Supported-green)
@@ -57,8 +57,8 @@ SentenceEmoji-RNN/
 2. **Create virtual environment**:
 
    ```bash
-   python -m venv emoji_rnn_env
-   .\emoji_rnn_env\Scripts\Activate.ps1  # Windows PowerShell
+   python -m venv venv
+   .\venv\Scripts\activate
    ```
 
 3. **Install dependencies**:
@@ -69,7 +69,7 @@ SentenceEmoji-RNN/
 
 4. **For CUDA support**, install PyTorch with CUDA:
    ```bash
-   pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+   pip install torch torchvision torchaudio 
    ```
 
 ## Usage
@@ -222,8 +222,8 @@ Core packages (see `requirements.txt` for complete list):
    ```bash
    git clone <repository-url>
    cd SentenceEmoji-RNN
-   python -m venv emoji_rnn_env
-   .\emoji_rnn_env\Scripts\activate  # Windows
+   python -m venv venv
+   .\venv\Scripts\activate  # Windows
    pip install -r requirements.txt
    ```
 
@@ -257,7 +257,7 @@ Core packages (see `requirements.txt` for complete list):
 
 ## License
 
-Open source project - feel free to modify and extend!
+Open source project
 
 ## Contributing
 
