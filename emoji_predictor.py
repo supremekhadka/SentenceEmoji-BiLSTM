@@ -3,7 +3,7 @@ import torch.nn as nn
 import pickle
 import re
 import numpy as np
-from model_training import EmojiLSTM
+from gpu_training import EmojiLSTM  # Import from gpu_training.py which has the enhanced architecture
 
 class EmojiPredictor:
     def __init__(self, model_path='emoji_lstm_model.pth'):
@@ -35,7 +35,8 @@ class EmojiPredictor:
                 embedding_dim=model_config['embedding_dim'],
                 hidden_dim=model_config['hidden_dim'],
                 num_classes=model_config['num_classes'],
-                num_layers=model_config['num_layers']
+                num_layers=model_config['num_layers'],
+                dropout=0.4  # Add the dropout parameter used during training
             )
             
             # Load model weights
